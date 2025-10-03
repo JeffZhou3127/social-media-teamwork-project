@@ -2,9 +2,12 @@ import React from "react";
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from "react-router-dom";
 
 import AppLayout from "./AppLayout";
+import Homepage from "../views/Homepage";
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route path="/" element={<AppLayout />} />
+  <Route path="/" element={<AppLayout />}>
+    <Route index element={<Homepage />} />
+  </Route>
 ));
 
 const App = () => <RouterProvider router={router} />;

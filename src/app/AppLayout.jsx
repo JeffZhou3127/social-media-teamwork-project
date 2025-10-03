@@ -1,6 +1,7 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import styles from "./AppLayout.module.css";
 
-const AppLayout = () => <h1 className={styles.h1}>Hello, World!</h1>;
+const AppLayout = () => <Outlet />;
 
 export default AppLayout;
