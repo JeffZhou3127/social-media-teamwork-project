@@ -40,7 +40,7 @@ const postsSlice = createSlice({
       })
       .addCase(fetchPostData.fulfilled, (state, action) => {
         state.posts = action.payload;
-        state.isLoadingData = true;
+        state.isLoadingData = false;
         state.isLoadingFailed = false;
       })
       .addCase(fetchPostData.rejected, (state, action) => {
