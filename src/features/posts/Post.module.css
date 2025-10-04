@@ -1,0 +1,27 @@
+* {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.section {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888;
+  overflow: hidden;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article {
+  padding: 15px;
+}
+
+.article * {
+  margin: 10px;
+}
+
+.author {
+  font-size: 10px;
+}

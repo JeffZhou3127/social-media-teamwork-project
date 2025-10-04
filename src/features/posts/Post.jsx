@@ -1,21 +1,17 @@
 import React from "react";
+import styles from "./Post.module.css";
 
 const Post = ({ postTitle, postImage, postDescription, author }) => {
-  // Render something here with the information
-  // If author is an empty string, set it to unknown
   return (
-    <section>
-      <img height="100" src={postImage}></img>
-      
-      <p>Posted by {author ? author : "unknown"}</p>
-      <br></br>
-      <article>
+    <section className={styles.section}>
+      <img className={styles.img} src={postImage} alt={postDescription} />
+      <article className={styles.article}>
         <h2>{postTitle}</h2>
+        <p className={styles.author}>Posted by {author ? author : "unknown"}</p>
         <p>{postDescription}</p>
       </article>
-      <br></br><br></br>
     </section>
   );
 };
-console.log(Post);
+
 export default Post;
